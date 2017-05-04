@@ -20,6 +20,7 @@ For now the following tool is being used as Wire Frame Sketch Tool.
 
 ### Android SDK
 If android native code need to be used.
+Download it from [here](https://developer.android.com/studio/index.html).
 
 ### Web Storage
 To host and run web service
