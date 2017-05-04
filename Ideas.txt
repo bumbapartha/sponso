@@ -9,3 +9,36 @@ Natural Language Processing
 TrueFriend (AutoMateEverything)
 Do all the task which can be done by mobile 
 (Later it will accept voice)
+
+The cook app!!
+Ever wondered what can come off the paltry ingredients left in your fridge after a hole night’s party…well, here it is!! The app that tells you what you can cook out of the ingredients you type in. it will consist of a database of recipes, that will keep appearing as you type in more and more ingredients in. whew, that’s a save, isn’t it!!
+
+App for buyers 
+
+We have plenty of mobile apps for sellers – where sellers can place ads of their products/services, have customers get in touch with them, and generate fruitful sales/business leads. How about having a mobile shopping app that ‘thinks’ from the buyers’ perspective. That’s right, it will be pretty innovative if there could be an application where buyers would be able to post their demands (along with pictures (if possible), specifications, and preferred price range). Vendors who sell those products would be able to contact buyers and complete the deal. A handy option for buyers, and an opportunity for sellers to take a pick from multiple trade options. This app will be a ‘win-win’ tool for all parties concerned.
+
+
+Story contribution app
+
+This one won’t be like the many mobile storytelling apps out there, which already have a certain number of stories in them (either free or through paid downloads). Instead, on this app, a user will have to start a story, write a few (say, 60) words, and then leave it in a ‘new story thread’. Another user, from anywhere in the globe, can pick it up and write the next 60 words. The story would expand in this manner, till a final word limit (1000, for example) is reached. User-curated storytelling app with a difference!
+
+
+Brand/product profiler app
+
+This can be built like an app for shoppers. At a large shopping outlet, products of many brands are displayed – and it is often tricky for buyers to make a choice from them. With this app installed in their handsets, all that they would have to do is point their smartphones in the direction of any product. The app will read off the product brand, and instantly display a brief history of the brand, current reputation, and a few selected customer reviews for the concerned product (if the product is a brand new one, the reviews would be for the brand). With more information at the fingertips, choosing the best products at shopping malls will become easier.
+
+
+App to play your favourite music at public places
+
+You step into a restaurant, music videos are being played on the beautiful television screens over there…and you do not like the music one bit. By 2017, there should be at least one app (probably more!) to change this. Users will be able to start their favourite YouTube music videos and point it towards the televisions/music players at such public places. The YouTube API will get added to the query, and your favourite video will be added to the playlist. Users will also get the option to view and upvote any video on the playlist. If your favourites match with what most people like, you might find your song playing at the restaurant soon!
+
+
+Rain prediction app
+
+There is a gamut of weather apps at Apple itunes and Google Play Store. All of them provide weather forecasts (accurately or otherwise!). A rain prediction app would be an upgrade over such existing applications. The app will be created with a strong and updated backend support, and would display the actual number of minutes before rain is expected to arrive - when the mobile device is pointed towards the sky (if no rain is expected within the next 24 hours, a message will be generated for users). Any mobile app company that takes up the challenge of making a rain predictor app will have to make sure about its accuracy. If it functions well, the app can be of great help to everyone.
+
+
+Travel Dairy App
+
+Whenever you travel just activate the app. It will give you some basic feature in your cover page of mobile in lock mode also.
+You can capture pic. Record Voice. Choose language for Print. It will generate a nice Dairy in PDF format. You just need to print as booklet.
