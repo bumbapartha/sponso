@@ -1,15 +1,8 @@
-# Task List
+# Required Third Party Service
 
-## Wire Frame
+Followings are the list of third party software/api/services required to develop and publish
 
-Need to create wire frame for visulation of the application.  
-### Which software need to be used?
-
-## Required Third Party Service
-
-Following are the list of third party software/api/services required to develop and publish on Google Play Store
-
-### Wire Frame Sketch Tool
+## Wire Frame Sketch Tool
 Need to find best suitable tool. Following feature need to be there.  
   * Easy use, Less Complex
   * Private Access
@@ -18,14 +11,14 @@ Need to find best suitable tool. Following feature need to be there.
 For now the following tool is being used as Wire Frame Sketch Tool.  
 [Fluidui](https://www.fluidui.com/editor/live/livePreview/cF94Q0NiSFdvU2xQVUlyMnNEdWhVcmlaNTJMVzlQeWFkbA==)
 
-### Android SDK
+## Android SDK
 If android native code need to be used.
 Download it from [here](https://developer.android.com/studio/index.html).
 
-### Web Storage
+## Web Storage
 To host and run web service
 
-### SMS Api
+## SMS Api
 To send OTP at the time of registration
 
 
