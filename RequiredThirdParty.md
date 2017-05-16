@@ -18,7 +18,10 @@ Download Eclipse from [here](http://www.eclipse.org/downloads/download.php?file=
 Download JDK for 64 bit for windows from [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).  
 
 ## Web Storage
-To host and run web service
+AWS  
+For Spring boot app in AWS with docker follow [this](http://zoltanaltfatter.com/2016/03/11/dockerized-spring-boot-service-on-aws/)
+
+
 
 ## SMS Api
 To send OTP at the time of registration
