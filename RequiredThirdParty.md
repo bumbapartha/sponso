@@ -19,8 +19,8 @@ Download JDK for 64 bit for windows from [here](http://www.oracle.com/technetwor
 
 ## Web Storage
 AWS  
-For Spring boot app in AWS with docker follow [this](http://zoltanaltfatter.com/2016/03/11/dockerized-spring-boot-service-on-aws/)
-
+For Spring boot app in AWS with docker follow [this](http://zoltanaltfatter.com/2016/03/11/dockerized-spring-boot-service-on-aws/)  
+Successfully Running it [here](http://springbootdockerdem-env.us-west-2.elasticbeanstalk.com/mytestapp/demo/hello) 
 
 
 ## SMS Api
