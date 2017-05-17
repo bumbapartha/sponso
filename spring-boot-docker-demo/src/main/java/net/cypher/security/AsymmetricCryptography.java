@@ -8,6 +8,7 @@ import java.io.UnsupportedEncodingException;
 import java.nio.file.Files;
 import java.security.GeneralSecurityException;
 import java.security.InvalidKeyException;
+import java.security.Key;
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
@@ -65,7 +66,7 @@ public class AsymmetricCryptography {
 		fos.close();
 	}
 
-	public String encryptText(String msg, PrivateKey key)
+	public String encryptText(String msg, Key key)
 			throws NoSuchAlgorithmException, NoSuchPaddingException,
 			UnsupportedEncodingException, IllegalBlockSizeException,
 			BadPaddingException, InvalidKeyException {
@@ -73,7 +74,7 @@ public class AsymmetricCryptography {
 		return Base64.encodeBase64String(cipher.doFinal(msg.getBytes("UTF-8")));
 	}
 
-	public String decryptText(String msg, PublicKey key)
+	public String decryptText(String msg, Key key)
 			throws InvalidKeyException, UnsupportedEncodingException,
 			IllegalBlockSizeException, BadPaddingException {
 		this.cipher.init(Cipher.DECRYPT_MODE, key);
@@ -88,10 +89,15 @@ public class AsymmetricCryptography {
 		return fbytes;
 	}
 
+
+	
 	public static void main(String[] args) throws Exception {
 		AsymmetricCryptography ac = new AsymmetricCryptography();
 		PrivateKey privateKey = ac.getPrivate("KeyPair/privateKey");
 		PublicKey publicKey = ac.getPublic("KeyPair/publicKey");
+		
+		CypherSecurity privateSecurity = new CypherSecurity(privateKey);
+		CypherSecurity publicSecurity = new CypherSecurity(publicKey);
 
 		String msg = "Cryptography is fun!This is Partha Sarathi Ghosh\nThe Quick Brown fox jumps over the lezy dog\n"
 				+"\nThe Quick Brown fox jumps over the lazy dog1"
@@ -101,19 +107,10 @@ public class AsymmetricCryptography {
 				+"\nThe Quick Brown fox jumps over the lazy dog5"
 				+"\nThe Quick Brown fox jumps over the lazy dog6"
 				+"\nThe Quick Brown fox jumps over the lazy dog7";
-		String encrypted_msg = ac.encryptText(msg, privateKey);
-		String decrypted_msg = ac.decryptText(encrypted_msg, publicKey);
-		System.out.println("Original Message: " + msg +
-			"\nEncrypted Message: " + encrypted_msg
+		
+		String decrypted_msg = privateSecurity.decrypt(publicSecurity.encrypt(msg));
+		System.out.println("Original Message: " + msg 
 			+ "\nDecrypted Message: " + decrypted_msg);
 
-		if (new File("KeyPair/text.txt").exists()) {
-			ac.encryptFile(ac.getFileInBytes(new File("KeyPair/text.txt")),
-				new File("KeyPair/text_encrypted.txt"),privateKey);
-			ac.decryptFile(ac.getFileInBytes(new File("KeyPair/text_encrypted.txt")),
-				new File("KeyPair/text_decrypted.txt"), publicKey);
-		} else {
-			System.out.println("Create a file text.txt under folder KeyPair");
-		}
 	}
 }
