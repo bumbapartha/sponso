@@ -4,23 +4,34 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>corsoft</groupId>
-    <artifactId>spring-boot-docker-demo</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>net.cypher.sponso.server</groupId>
+    <artifactId>Sponso</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
+	<name>Sponso</name>
+	<description></description>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.0.RELEASE</version>
+        <version>1.5.3.RELEASE</version>
+	<relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <docker.image.prefix>corsoft</docker.image.prefix>
+        <docker.image.prefix>0.0.1-SNAPSHOT</docker.image.prefix>
     </properties>
 
     <dependencies>
 
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-data-mongodb</artifactId>
+	</dependency>
+		
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -30,8 +41,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jersey</artifactId>
         </dependency>
+	
+	
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-test</artifactId>
+		<scope>test</scope>
+	</dependency>
         
-        <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+
 		<dependency>
 		    <groupId>commons-codec</groupId>
 		    <artifactId>commons-codec</artifactId>
@@ -42,7 +60,7 @@
     </dependencies>
 
     <build>
-        <finalName>spring-boot-docker-demo</finalName>
+        <finalName>Sponso</finalName>
 
         <plugins>
 

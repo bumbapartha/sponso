@@ -1,13 +1,13 @@
 package com.cor;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * Created by adrianmilne on 04/08/2016.

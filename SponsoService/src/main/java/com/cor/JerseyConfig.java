@@ -1,8 +1,9 @@
 package com.cor;
 
-import com.cor.service.HelloWorldService;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.stereotype.Component;
+
+import com.cor.service.HelloWorldService;
 
 /**
  * Created by adrianmilne on 04/08/2016.
