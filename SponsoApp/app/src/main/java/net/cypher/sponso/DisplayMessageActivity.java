@@ -29,7 +29,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
     private void google(String search) {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url("http://www.google.co.in/search?q="+search)
+                .url("http://192.168.0.102:8080/mytestapp/all")
                 .build();
         client.newCall(request).enqueue(new Callback() {
                 @Override
