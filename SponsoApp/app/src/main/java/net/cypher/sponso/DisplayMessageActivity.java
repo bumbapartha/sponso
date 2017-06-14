@@ -21,15 +21,23 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        final String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
-        google(message);
+		Runnable r = new Runnable() {
+            @Override
+            public void run() {
+                TextView textView = (TextView) findViewById(R.id.textView);
+                textView.setText(message);
+            }
+        };
+		
+        google(r);
     }
 
-    private void google(String search) {
+    private void google(final Runnable r) {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url("http://192.168.0.102:8080/mytestapp/all")
+                .url("http://192.168.0.103:8080/mytestapp/all")
                 .build();
         client.newCall(request).enqueue(new Callback() {
                 @Override
@@ -42,14 +50,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
                         throw new IOException("Unexpected code " + response);
                     }
                     final String text = response.body().string();
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            // Capture the layout's TextView and set the string as its text
-                            TextView textView = (TextView) findViewById(R.id.textView);
-                            textView.setText(text);
-                        }
-                    });
+                    runOnUiThread(r);
                 }
             }
         );
